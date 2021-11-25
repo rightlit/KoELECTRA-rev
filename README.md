@@ -1,0 +1,2 @@
+# KoELECTRA-rev
+KoELECTRA revision
