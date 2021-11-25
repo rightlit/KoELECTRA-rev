@@ -1,7 +1,7 @@
 {
   "tpu_name": "electra-base",
   "tpu_zone": "europe-west4-a",
-  "use_tpu": true,
+  "use_tpu": false,
   "num_tpu_cores": 8,
   "vocab_size": 32200,
   "num_train_steps": 700000,
