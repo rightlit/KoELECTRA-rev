@@ -79,6 +79,9 @@ def train(args,
     for epoch in mb:
         epoch_iterator = progress_bar(train_dataloader, parent=mb)
         for step, batch in enumerate(epoch_iterator):
+            if(step % 10 == 0):
+                print('step : ', step)
+            
             model.train()
             batch = tuple(t.to(args.device) for t in batch)
             inputs = {
