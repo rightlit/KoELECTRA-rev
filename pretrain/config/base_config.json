@@ -8,6 +8,6 @@
   "save_checkpoints_steps": 25000,
   "train_batch_size": 16,
   "learning_rate": 2e-4,
-  "max_seq_length": 512,
+  "max_seq_length": 64,
   "do_lower_case": false
 }
