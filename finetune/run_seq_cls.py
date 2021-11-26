@@ -80,7 +80,8 @@ def train(args,
         epoch_iterator = progress_bar(train_dataloader, parent=mb)
         for step, batch in enumerate(epoch_iterator):
             if(step % 10 == 0):
-                print('step : ', step)
+                #print('step / max_steps : ', step , max_steps)
+                print('{} / {}'.format(step , max_steps))
             
             model.train()
             batch = tuple(t.to(args.device) for t in batch)
