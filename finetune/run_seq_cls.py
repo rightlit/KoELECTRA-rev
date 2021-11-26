@@ -80,7 +80,7 @@ def train(args,
         epoch_iterator = progress_bar(train_dataloader, parent=mb)
         for step, batch in enumerate(epoch_iterator):
             if(step % 10 == 0):
-                print('step / global_step : ', step , global_step)
+                print('step / global_step / t_total: ', step , global_step, t_total)
                 #print('{} / {}'.format(step , args.max_steps))
             
             model.train()
