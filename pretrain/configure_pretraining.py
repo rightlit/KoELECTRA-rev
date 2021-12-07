@@ -58,7 +58,11 @@ class PretrainingConfig(object):
             kwargs["model_hparam_overrides"]
             if "model_hparam_overrides" in kwargs else {})
         self.embedding_size = None  # bert hidden size by default
-        self.vocab_size = 32200  # number of tokens in the vocabulary
+        
+        # modified (2021.12.07)
+        #self.vocab_size = 32200  # number of tokens in the vocabulary
+        self.vocab_size = 32000  # number of tokens in the vocabulary
+        
         self.do_lower_case = False  # lowercase the input?
 
         # generator settings
