@@ -60,8 +60,8 @@ class PretrainingConfig(object):
         self.embedding_size = None  # bert hidden size by default
         
         # modified (2021.12.07)
-        #self.vocab_size = 32200  # number of tokens in the vocabulary
-        self.vocab_size = 32000  # number of tokens in the vocabulary
+        self.vocab_size = 32200  # number of tokens in the vocabulary
+        #self.vocab_size = 32000  # number of tokens in the vocabulary
         
         self.do_lower_case = False  # lowercase the input?
 
