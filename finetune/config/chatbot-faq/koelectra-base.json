@@ -21,7 +21,7 @@
   "max_grad_norm": 1.0,
   "no_cuda": false,
   "model_type": "koelectra-base",
-  "model_name_or_path": "./pretrain/output/model.ckpt-89000",
+  "model_name_or_path": "/content/KoELECTRA-rev/pretrain/models/output/model.ckpt-89000",
   "output_dir": "koelectra-base-chatbot-ckpt",
   "seed": 42,
   "train_batch_size": 64,
