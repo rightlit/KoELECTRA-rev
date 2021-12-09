@@ -1,5 +1,5 @@
 {
-  "task": "nsmc",
+  "task": "chatbot-faq",
   "data_dir": "data",
   "ckpt_dir": "ckpt",
   "train_file": "train.tsv",
