@@ -229,12 +229,22 @@ def main(cli_args):
             num_labels=tasks_num_labels[args.task]
         )
     else:
+        '''
         config = CONFIG_CLASSES[args.model_type].from_pretrained(
             args.model_name_or_path,
             num_labels=tasks_num_labels[args.task],
             id2label={str(i): label for i, label in enumerate(labels)},
             label2id={label: i for i, label in enumerate(labels)},
         )
+        '''
+        config = CONFIG_CLASSES[args.model_type].from_pretrained(
+            args.model_name_or_path,
+            num_labels=tasks_num_labels[args.task],
+            id2label={str(i): label for i, label in enumerate(labels)},
+            label2id={label: i for i, label in enumerate(labels)},
+            local_files_only=True
+        )
+        
     tokenizer = TOKENIZER_CLASSES[args.model_type].from_pretrained(
         args.model_name_or_path,
         do_lower_case=args.do_lower_case
