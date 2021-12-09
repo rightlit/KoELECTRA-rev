@@ -471,7 +471,7 @@ seq_cls_processors = {
 }
 
 #seq_cls_tasks_num_labels = {"kornli": 3, "nsmc": 2, "paws": 2, "korsts": 1, "question-pair": 2, "hate-speech": 3}
-seq_cls_tasks_num_labels = {"kornli": 3, "nsmc": 2, "paws": 2, "korsts": 1, "question-pair": 2, "hate-speech": 3, "chatbot": 60}
+seq_cls_tasks_num_labels = {"kornli": 3, "nsmc": 2, "paws": 2, "korsts": 1, "question-pair": 2, "hate-speech": 3, "chatbot-faq": 60}
 
 seq_cls_output_modes = {
     "kornli": "classification",
