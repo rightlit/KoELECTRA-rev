@@ -168,6 +168,9 @@ class SingleOutputTask(task.Task):
           label = tokenization.convert_to_unicode(line[label_loc])
         if swap:
           text_a, text_b = text_b, text_a
+
+        # added by rightlit(2021.12.10)
+        print('##### _load_glue: ', i, text_a, text_b, label)
         examples.append(InputExample(eid=eid, task_name=self.name,
                                      text_a=text_a, text_b=text_b, label=label))
       except Exception as ex:
